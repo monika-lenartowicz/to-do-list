@@ -17,27 +17,27 @@
 </head>
 
 <body class="body">
-   <h1>Lista zadań</h1>
-   <div class="container"></div>
-   <h2>Dodaj nowe zadanie</h2>
-
-
-   <form class="js-form">
-
-      <input class="js-newTask">
-      <button>
-         Dodaj zadanie
-      </button>
-      <h2>Lista zadań</h2>
-      <button>done</button>
-      <ul class="js-tasks">
-         <li>test</li>
-      </ul>
-      <button>
-         usuń
-      </button>
-
-
+   <div class="container">
+      <h1>Lista zadań</h1>
+      <section class="taskContainer">
+         <h2 class="taskContainer__header">Dodaj nowe zadanie</h2>
+         <form class="taskContainer__form js-form">
+            <input class="js-newTask">
+            <button class="taskContainer__addTask">
+               Dodaj zadanie
+            </button>
+      </section>
+      <section class="taskContainer">
+         <h2 class="taskContainer__header">Lista zadań</h2>
+         <button class="taskContainer__done">✓</button>
+         <ul class="js-tasks">
+            <li class="taskContainer__item">test</li>
+         </ul>
+         <button class="taskContainer__remove">
+            usuń
+         </button>
+      </section>
+   </div>
 </body>
 
 </html>
