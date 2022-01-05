@@ -19,24 +19,28 @@
 <body class="body">
    <div class="container">
       <h1>Lista zadań</h1>
+
       <section class="taskContainer">
          <h2 class="taskContainer__header">Dodaj nowe zadanie</h2>
+
          <form class="taskContainer__form js-form">
-            <input class="js-newTask">
-            <button class="taskContainer__addTask">
+            <input class="taskContainer__addTask taskContainer__addTask--long js-newTask"
+               placeholder="Co jest do zrobienia?">
+            <button class="taskContainer__addTask taskContainer__addTask--button">
                Dodaj zadanie
             </button>
+         </form>
       </section>
+
       <section class="taskContainer">
          <h2 class="taskContainer__header">Lista zadań</h2>
-         <button class="taskContainer__done">✓</button>
-         <ul class="js-tasks">
-            <li class="taskContainer__item">test</li>
-         </ul>
-         <button class="taskContainer__remove">
-            usuń
-         </button>
+         <div class="tasks">
+            <ul class="tasks__list js-tasks">
+
+            </ul>
+         </div>
       </section>
+
    </div>
 </body>
 
