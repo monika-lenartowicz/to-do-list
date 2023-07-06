@@ -1,0 +1,33 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+}
+
+.body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #ededed;
+}
+
+@media (min-width: 320px) {
+	.body {
+		margin: 0 10px;
+	}
+}
+
+.text {
+	align-self: center;
+	padding-left: 10px;
+}
+
+.text__done {
+	text-decoration: line-through;
+}
+
+.text__notDone {
+	text-decoration: none;
+}
