@@ -1,0 +1,99 @@
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+}
+
+.taskContainer {
+	background-color: white;
+}
+
+.taskContainer__header {
+	border-bottom: 2px solid #ededed;
+	padding: 20px;
+	margin-bottom: 0;
+}
+
+.taskContainer__item {
+	border-bottom: 2px solid #ededed;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+
+.taskContainer__done,
+.taskContainer__remove {
+	width: 40px;
+	height: 40px;
+}
+
+.taskContainer__done {
+	color: white;
+	background-color: green;
+	border: none;
+}
+
+.taskContainer__remove {
+	background-color: red;
+	border: none;
+	padding: 10px;
+	align-self: center;
+}
+
+.taskContainer__form {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+	.taskContainer__form {
+		flex-direction: column;
+	}
+}
+
+.taskContainer__addTask {
+	padding: 15px 10px;
+	border: 2px solid #ededed;
+}
+
+@media (max-width: 767px) {
+	.taskContainer__addTask {
+		width: 100%;
+	}
+}
+
+.taskContainer__addTask--long {
+	width: 80%;
+}
+
+@media (max-width: 767px) {
+	.taskContainer__addTask--long {
+		width: 100%;
+		margin-bottom: 8px;
+	}
+}
+
+.taskContainer__addTask--button {
+	background-color: teal;
+	color: #ededed;
+	border: none;
+}
+
+.tasks {
+	border-bottom: 2px solid #ededed;
+	padding: 20px;
+}
+
+@media (max-width: 676px) {
+	.tasks {
+		padding: 10px;
+	}
+}
+
+.tasks__list {
+	list-style: none;
+	padding: 0 10px;
+	margin-top: 0;
+	width: 100%;
+}
